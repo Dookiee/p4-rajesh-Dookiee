@@ -13,12 +13,12 @@ function* fibonacci(n){
 }
 
 
-const obj = fibonacci(3)
+const obj = fibonacci(25)
 let loop = false
 while(!loop){
-    let currentIteration = obj.next()
-    console.log(currentIteration.value)
-    loop = currentIteration.done
+    let iterator = obj.next()
+    console.log(iterator.value)
+    loop = iterator.done
 }
 
 
